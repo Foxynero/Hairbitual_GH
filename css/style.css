@@ -61,13 +61,18 @@ h2 {
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     line-height: 1.5em;
     font-weight: 400;
     font-family: "Teko", sans-serif;
     color: #fff;
     margin-bottom: 15px;
+}
+
+h6 {
+    font: "Times New Roman";
+    font-weight: 400;
+    color: #fff;
 }
 p {
      font-family: 'Didact Gothic', sans-serif;
