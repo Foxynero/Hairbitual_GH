@@ -196,12 +196,9 @@
                                 <h6>Used to freshen air in your rooms and car. Prtable and rechargeable</h6>
                             </div>
                         </div>
-                        <img src="images/gallery/1.jpeg" alt="Image 1">
-                        <a href="#" onclick="sendWhatsAppMessage('+233542059074', 'Image 1');">Send to Owner</a>
-
-                        <!-- Image 2 -->
-                        <img src="images/gallery/1.jpeg" alt="Image 2">
-                        <a href="#" onclick="sendWhatsAppMessage('+233542059074', 'Image 2');">Send to Owner</a>
+                        <!-- Image 1 -->
+                        <img src="image1.jpg" alt="Image 1">
+                        <a href="#" onclick="sendWhatsAppMessage('+233542059074', 'Image 1', 'URL_TO_IMAGE_');">Send to Owner</a>
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-right animate-box" data-animate-effect="fadeInUp">
@@ -363,8 +360,7 @@
         <script src="js/script.js"></script>
 
         <script>
-    function sendWhatsAppMessage(phoneNumber, imageName) {
-    var imageURL = 'URL_TO_' + imageName; // Replace with the actual URL for the image.
+    function sendWhatsAppMessage(phoneNumber, imageName, imageURL) {
     var message = 'Check out this image: ' + imageURL;
     var whatsappLink = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(phoneNumber) + '&text=' + encodeURIComponent(message);
 
