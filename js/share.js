@@ -1,5 +1,7 @@
-document.getElementById('shareImage').addEventListener('click', function() {
-    var message = encodeURIComponent('Check out this awesome image: https://raw.githubusercontent.com/Foxynero/Vincee/main/images/gallery/1.jpeg');
-    var url = 'https://wa.me/+233597421076?text=' + message;
-    window.location.href = url;
-});
+function sendWhatsAppMessage(phoneNumber, imageName) {
+    var imageURL = 'https://github.com/Foxynero/Vincee/blob/main/images/gallery/1.jpeg' + imageName; // Replace with the actual URL for the image.
+    var message = 'Check out this image: ' + imageURL;
+    var whatsappLink = 'https://api.whatsapp.com/send?phone=' + encodeURIComponent(phoneNumber) + '&text=' + encodeURIComponent(message);
+
+    window.open(whatsappLink, '_blank');
+}
